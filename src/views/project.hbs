@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{>main}}
+    <div class="recent">
+        <div class="recent-title">Recent Project</div>
+        <div class="recent-categories">
+            <div class="category" onclick="showAll()">All</div>
+            <div class="category" onclick="showCreative()">Creative</div>
+        </div>
+    </div>
+    {{#each projects}}
+    <a class="work-obj" id="{{id}}" href="/work/{{id}}">
+        <img src="{{coverphoto}}" class="work-obj" />
+        <div class="work-overlay"></div>
+        <div class="work-title">{{title}}</div>
+    </a>
+    {{/each}}
+
+    {{>footer}}
+</body>
+</html>
+
+<script>
+    const one = document.getElementById("1");
+    const two = document.getElementById("2");
+    const three = document.getElementById("3");
+
+    function showCreative(){
+        one.style.display = "none";
+        two.style.display = "none";
+        three.style.display = "inline-block";
+    }
+    function showWeb(){
+        one.style.display = "inline-block";
+        two.style.display = "inline-block";
+        three.style.display = "none";
+    }
+    function showAll(){
+        one.style.display = "inline-block";
+        two.style.display = "inline-block";
+        three.style.display = "inline-block";
+    }
+</script>

@@ -1,0 +1,38 @@
+{
+    "1": {
+        "id": "1",
+        "title": "Xd-Cinema",
+        "description": "A simple movie web application that display the top, upcoming, popular and rated movies",
+        "sitename": "Movie Web Application",
+        "url": " https://main--egs-xd-cinema.netlify.app/",
+        "deliverables": ["Front-End Project", "Personal Project"],
+        "tools":["React JS, tailwind, framer motion react-router-dom"],
+        "coverphoto":"/photos/cover/Xd-Cinema.png",
+        "bannerphoto":"/photos/post/banner_post_2.png",
+        "partial":"post"
+    },
+    "2": {
+        "id": "2",
+        "title": "Who Pays The Bill",
+        "description": "A simple movie web application quiz game based to find out who will pay the bills",
+        "sitename": "Quiz Web Application game",
+        "url": " https://whopaysthebillproject.netlify.app/",
+        "deliverables": ["Front-End Project", "Personal Project"],
+        "tools":["React JS, BootStrap, useState, useEffect, useContext, useReducer, etc..."],
+        "coverphoto":"/photos/cover/WhoPaysTheBill.png",
+        "bannerphoto":"/photos/post/banner_post_2.png",
+        "partial":"post"
+    },
+    "3": {
+        "id": "3",
+        "title": "Find Programming Language",
+        "description": "A basic starter React Application",
+        "sitename": "Basic React Js Web Application",
+        "url": " https://programminglanguagesproject.netlify.app/",
+        "deliverables": ["Front-End Project", "Personal Project"],
+        "tools":["Basix of react JSX, State, Props, LyfeCycle, Class component & Functional component, styling with css"],
+        "coverphoto":"/photos/cover/Basic-React.png",
+        "bannerphoto":"/photos/post/banner_post_2.png",
+        "partial":"post"
+    }
+}

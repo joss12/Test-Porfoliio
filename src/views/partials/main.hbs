@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Eddy's Website</title>
+</head>
+<div class="navbar">
+    <a class="name" href="/" >Eddy Mouity</a>
+    <i id="bars" class="fas fa-bars" onclick="openMenu()"></i>
+</div>
+<div id="menu-overlay"></div>
+<div id="menu-slide" class="menu-slide">
+    <a href="javascript:void(0)" class="menu-x" onclick="closeMenu()">&times;</a>
+    <a href="/project">Projects</a>
+    <a href="/about">About Me</a>
+    <a href="/contact">Contact</a>
+</div>
+</html>
+<script>
+    function openMenu(){
+        const divMenuSlide = document.getElementById("menu-slide");
+        divMenuSlide.style.width = "300px";
+        document.getElementById("menu-overlay").style.width = "100%";
+    }
+
+    function closeMenu(){
+        document.getElementById("menu-slide").style.width = "0";
+        document.getElementById("menu-overlay").style.width = "0";
+    }
+</script>
